@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #222;
+}
+
+.app {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: 21px;
+}
+
+.search-section {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#search-input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd0da;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+
+.autocomplete-list,
+.repositories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#repositories-list li {
+    white-space: pre-line;
+    border: solid black 3px;
+    background:#626b7a;}
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: white;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.autocomplete-list:empty {
+  display: none;
+}
+
+
+.remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.autocomplete-item:last-child {
+  border-bottom: none;
+}
+
+.repositories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+

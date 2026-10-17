@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repository Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <h1>Поиск репозиториев GitHub</h1>
+
+    <section class="search-section">
+      <label for="search-input">Поиск репозитория</label>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="react"
+        autocomplete="off"
+      >
+      <ul id="autocomplete-list" class="autocomplete-list"></ul>
+    </section>
+
+    <section class="repositories-section">
+      <h2>Добавленные репозитории</h2>
+      <ul id="repositories-list" class="repositories-list"></ul>
+    </section>
+  </main>
+</body>
+</html>
